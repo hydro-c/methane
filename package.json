@@ -1,0 +1,32 @@
+{
+  "name": "methane",
+  "version": "0.0.1",
+  "description": "An Chrome RSS Reader",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/hydro-c/methane#readme",
+  "dependencies": {
+    "react": "^0.13.3",
+    "react-router": "^0.13.3"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "css-loader": "^0.16.0",
+    "jsx-loader": "^0.13.2",
+    "node-sass": "^3.2.0",
+    "sass-loader": "^2.0.1",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hydro-c/methane.git"
+  },
+  "author": "Arthur Zheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hydro-c/methane/issues"
+  }
+}
