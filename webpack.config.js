@@ -1,14 +1,29 @@
 module.exports = {
-  entry: './index.js',
+  entry: './js/entry.js',
   output: {
+    path:     'public/',
     filename: 'bundle.js'
   },
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'babel-loader' },
-      { test: /\.less$/, loader: 'style-loader!css-loader!less-loader' }, // use ! to chain loaders
-      { test: /\.css$/, loader: 'style-loader!css-loader' },
-      { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' } // inline base64 URLs for <=8k images, direct URLs for the rest
+      {
+        // chain loader: Right to Left
+        test:     /\.js$/,
+        loaders:  ['react-hot', 'jsx', 'babel'],
+        exclude:  /node_modules/
+      },
+      {
+        test:     /\.scss$/,
+        loader:  ["style", "css", "sass"]
+      },
+      {
+        test:     /\.css$/,
+        loader:   ["style-loader", "css-loader"]
+      },
+      {
+        test:     /\.(png|jpg)$/,
+        loader:   'url-loader?limit=8192'
+      } // inline base64 URLs for <=8k images, direct URLs for the rest
     ]
   }
 };
