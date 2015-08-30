@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './js/entry.js',
+  entry: './src/entry.js',
   output: {
     path:     'public/',
     filename: 'bundle.js'
@@ -8,13 +8,14 @@ module.exports = {
     loaders: [
       {
         // chain loader: Right to Left
+        // babel handles: ES6, JSX
         test:     /\.js$/,
-        loaders:  ['react-hot', 'jsx', 'babel'],
+        loaders:  ['react-hot', 'babel-loader'],
         exclude:  /node_modules/
       },
       {
         test:     /\.scss$/,
-        loader:  ["style", "css", "sass"]
+        loader:  ["style", "css-loader", "sass-loader"]
       },
       {
         test:     /\.css$/,
