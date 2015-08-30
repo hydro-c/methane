@@ -1,0 +1,12 @@
+// // Reset and dependencies
+@import "normalize";
+
+// left, top, bottom elements
+@import "list-controller";
+@import "footer";
+@import "src-list";
+
+// components for the 3 tabs
+@import "text-list";
+@import "image-list";
+@import "tile-list";
