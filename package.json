@@ -4,7 +4,7 @@
   "description": "An Chrome RSS Reader",
   "main": "index.js",
   "scripts": {
-    "dev":  "node server.js",
+    "dev":  "node dev.server.js",
     "pro":  "webpack --config webpack.pro.config.js -p --bail"
   },
   "homepage": "https://github.com/hydro-c/methane#readme",
