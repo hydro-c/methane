@@ -8,7 +8,7 @@ Open source Chrome RSS Reader<br>
 1. install node
 2. in root, run: npm install
 3. run: webpack
-4. load index.html and see the msg ('in container')
+4. load index.html and see the msg ('in container')<br>
 # Why this name?
 Methan, CH4, is the simplest form of hydrocarbon.<br>
 Thus I use this name for my very first open source app as a beginning.
