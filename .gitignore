@@ -5,6 +5,7 @@ node_modules
 # Compiled #
 ###################
 build
+_design
 
 # Compiled source #
 ###################
