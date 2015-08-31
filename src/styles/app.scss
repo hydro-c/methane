@@ -1,5 +1,6 @@
 // // Reset and dependencies
 @import "normalize";
+@import "base";
 
 // left, top, bottom elements
 @import "list-controller";
@@ -10,3 +11,7 @@
 @import "text-list";
 @import "image-list";
 @import "tile-list";
+
+.container {
+  color: #ddd
+}
