@@ -4,7 +4,7 @@ const Container = React.createClass({
   render () {
     return (
       <div className="container">
-        in container
+        succeed
       </div>
     );
   }

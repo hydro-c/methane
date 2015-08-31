@@ -2,11 +2,10 @@
   "name": "methane",
   "version": "0.0.1",
   "description": "An Chrome RSS Reader",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "start":  "node server.js",
-    "build":  "webpack",
-    "dev":    "webpack-dev-server --content-base build/ --hot"
+    "dev":  "node server.js",
+    "pro":  "webpack --config webpack.pro.config.js -p --bail"
   },
   "homepage": "https://github.com/hydro-c/methane#readme",
   "dependencies": {

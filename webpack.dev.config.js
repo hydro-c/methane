@@ -1,25 +1,20 @@
-// var path = require('path');
+var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
 
   // entry for js building
   entry: [
-    //'webpack-dev-server/client', // WebpackDevServer host and port
-    //'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
-    './src/main.js' // Your appʼs entry point
+    'webpack-dev-server/client?http://localhost:8080', // WebpackDevServer host and port
+    'webpack/hot/dev-server', // "only" prevents reload on syntax errors
+    './src/main.js' // appʼs entry point
   ],
-
-  // devServer: {
-  //   contentBase: "./build",
-  //   noInfo: true, //  --no-info option
-  //   hot: true,
-  //   inline: true
-  // },
 
   // the only js file we need after building for now
   output: {
-    path:     './build',
-    filename: 'app.js'
+    path: __dirname,
+    filename: 'app.js',
+    publicPath: '/static/'
   },
 
   // TODO: Add sourse map, url loader
@@ -47,5 +42,9 @@ module.exports = {
         loader:   'url-loader?limit=8192'
       } // inline base64 URLs for <=8k images, direct URLs for the rest
     ]
-  }
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ]
 };
