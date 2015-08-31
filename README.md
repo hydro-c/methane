@@ -1,10 +1,10 @@
 # Methane
 Methane: a simple, easy-to-use Chrome RSS reader.
-## Keywords
+# Keywords
 HTML/CSS, Async-Javascript, UX design(of course)<br>
 React/Flux, React-router<br>
 Open source Chrome RSS Reader<br>
-#How to run
+# How to run
 1. install node
 2. in root, run: npm install
 3. run: webpack
