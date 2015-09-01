@@ -4,8 +4,8 @@
   "description": "An Chrome RSS Reader",
   "main": "index.js",
   "scripts": {
-    "dev":  "node dev.server.js",
-    "pro":  "webpack --config webpack.pro.config.js -p --bail"
+    "dev": "node dev.server.js",
+    "pro": "webpack --config webpack.pro.config.js -p --bail"
   },
   "homepage": "https://github.com/hydro-c/methane#readme",
   "dependencies": {
@@ -19,9 +19,9 @@
     "babel-loader": "^5.3.2",
     "css-loader": "^0.16.0",
     "jsx-loader": "^0.13.2",
-    "path": "^0.11.14",
     "react-hot-loader": "^1.3.0",
     "sass-loader": "^2.0.1",
+    "style-loader": "^0.12.3",
     "webpack": "^1.11.0",
     "webpack-dev-server": "^1.10.1"
   },
