@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node dev.server.js",
-    "pro": "webpack --config webpack.pro.config.js -p --bail"
+    "pro": "webpack -p"
   },
   "homepage": "https://github.com/hydro-c/methane#readme",
   "dependencies": {

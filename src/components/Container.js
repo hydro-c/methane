@@ -1,11 +1,14 @@
 import React from 'react';
-require('!style!css!sass!../styles/app.scss');
+
+// react-hot-loader/docs/Troubleshooting.md
+// https://github.com/gaearon/react-hot-loader/blob/master/docs/Troubleshooting.md
+import '!style!css!sass!../styles/app.scss';
 
 const Container = React.createClass({
   render () {
     return (
       <div className="container">
-        succeed
+        js successful loaded
       </div>
     );
   }
