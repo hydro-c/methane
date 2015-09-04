@@ -2,7 +2,10 @@
 @import "normalize";
 @import "base";
 
-// left, top, bottom elements
+// elements
+@import "button";
+
+// left, top, bottom group
 @import "list-controller";
 @import "footer";
 @import "src-list";
@@ -11,8 +14,3 @@
 @import "text-list";
 @import "image-list";
 @import "tile-list";
-
-* {
-  color: tomato;
-  font-size:15px;
-}

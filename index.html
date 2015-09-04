@@ -5,10 +5,64 @@
   <title>Methane Reader</title>
 </head>
 
-<body>page loaded
-  <div id="app"></div>
-  <script src="/assets/app.js"></script>
-  <!-- <script src="public/build/app.js"></script> -->
+<body>
+<div id="app1"></div>
+<div id="app2">
+  <div class="feed-list">
+    <div class="logo-group">
+      <div class="logo">Methane</div>
+      <div class="logo-deco"><img src="/public/images/logo-decoration.png"/></div>
+    </div>
+    <div class="feed-list-wrapper">
+      <ul>
+        <li>All Feeds</li>
+        <li>Engadget</li>
+        <li>Zhihu</li>
+        <li>Chrome Fan</li>
+        <li>
+          <ul>
+            <li>Camera News</li>
+            <li>Mirrorless Camera News</li>
+            <li>Camera News</li>
+          </ul>
+        </li>
+        <li>CodyHouse >> Gems</li>
+        <li>GraphicBurger</li>
+        <li>The Code Player</li>
+        <li>Smashing Magazine</li>
+      </ul>
+    </div>
+    <div class="feed-menu-group">
+      <ul>
+        <li class="feed-item menu-item">
+          <i>(heart)</i>Fav
+        </li>
+        <li class="feed-item menu-item">
+          <i>(star)</i>Recommended
+        </li>
+        <li class="feed-item menu-item">
+          <i>(cog)</i>Settings
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="src-list-controller">
+    <div class="src-list-style-tab">
+      <div>style-1</div>
+      <div>style-2</div>
+      <div>style-3</div>
+    </div>
+    <div class="src-name">
+      <img src="/public/images/engadget-logo.png"/>Engadget<i class=""></i>
+    </div>
+    <div class="src-control-button">
+      <a><span class="button src-control">(refresh)</span>Refresh</a>
+      <a><span class="button src-control">(checked)</span>Mark All Read</a>
+    </div>
+  </div>
+</div>
+  <script src="/assets/build/app.js"></script>
 </body>
 
 </html>

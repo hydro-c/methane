@@ -8,7 +8,6 @@ const Container = React.createClass({
   render () {
     return (
       <div className="container">
-        js successful loaded
       </div>
     );
   }
